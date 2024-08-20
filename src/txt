@@ -1,0 +1,86 @@
+   <div className="relative h-80 w-full items-center overflow-x-hidden mb-52">
+          <div className="w-full h-32 absolute rotate-2 z-10 flex justify-center items-center uppercase gap-7 overflow-x-hidden top-9 bg-orange-600">
+            <div className="flex items-center gap-6" ref={txt}>
+              <div className="flex items-center gap-6">
+                <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
+                  meet science
+                </h1>
+                <div className="border-2 border-white rounded-xl px-2 flex">
+                  <h1 className="text-[3vw]">M</h1>̥
+                  <div className="flex flex-col items-center h-8">
+                    <h1 className="text-xl mt-3">S</h1>
+                    <h1 className="text-xl leading-3">©</h1>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
+                    we mind your business
+                  </h1>
+                  <div className="border-2 border-white rounded-xl px-2 flex">
+                    <h1 className="text-[3vw]">M</h1>̥
+                    <div className="flex flex-col items-center h-8">
+                      <h1 className="text-xl mt-3">S</h1>
+                      <h1 className="text-xl leading-3">©</h1>
+                    </div>
+                  </div>
+                </div>
+                <div className="border-2 border-white rounded-xl px-2 flex">
+                  <h1 className="text-[3vw]">M</h1>̥
+                  <div className="flex flex-col items-center h-8">
+                    <h1 className="text-xl mt-3">S</h1>
+                    <h1 className="text-xl leading-3">©</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
+                  we mind your business
+                </h1>
+                <div className="border-2 border-white rounded-xl px-2 flex">
+                  <h1 className="text-[3vw]">M</h1>̥
+                  <div className="flex flex-col items-center h-8">
+                    <h1 className="text-xl mt-3">S</h1>
+                    <h1 className="text-xl leading-3">©</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
+                  it's not
+                </h1>
+                <div className="border-2 border-white rounded-xl px-2 flex">
+                  <h1 className="text-[3vw]">M</h1>̥
+                  <div className="flex flex-col items-center h-8">
+                    <h1 className="text-xl mt-3">S</h1>
+                    <h1 className="text-xl leading-3">©</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full h-36 bg-[#F8F1DE] -rotate-3 absolute bottom-16 text-black whitespace-nowrap flex items-center uppercase gap-7">
+            <div className="flex items-center gap-5" ref={tsst}>
+              <div className="flex items-center">
+                <div className="border-2 border-black rounded-xl px-2 flex">
+                  <h1 className="text-[3vw]">M</h1>̥
+                  <div className="flex flex-col items-center h-8">
+                    <h1 className="text-xl mt-3">S</h1>
+                    <h1 className="text-xl leading-3">©</h1>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
+                  we mind your business
+                </h1>
+                <div className="border-2 border-black rounded-xl px-2 flex">
+                  <h1 className="text-[3vw]">M</h1>̥
+                  <div className="flex flex-col items-center h-8">
+                    <h1 className="text-xl mt-3">S</h1>
+                    <h1 className="text-xl leading-3">©</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

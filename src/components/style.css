@@ -1,0 +1,13 @@
+#elemets:hover .elem{
+    transform: translateY(-100%);
+
+}
+
+#elemets:hover .ele{
+    transform: translateY(-100%);
+   
+}
+
+.ele,.elem{
+    transition: all ease-in-out 0.1s;
+}
