@@ -17,8 +17,7 @@ const Text = () => {
         scrub:1,
         start:"top bottom",
         end:"bottom top"
-
-      }
+     }
     })
   }, [])
   

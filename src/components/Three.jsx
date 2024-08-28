@@ -1,27 +1,26 @@
-import React, { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
-import gsap from "gsap";
+import { useRef } from 'react';
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
+gsap.registerPlugin(useGSAP);
+
 
 const Three = () => {
-  const rafi = useRef(null);
-  const rafi2 = useRef(null);
-  const rafi3 = useRef(null);
-  const rafi4 = useRef(null);
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  useGSAP(() => {
-    gsap.from(rafi.current,{
-      x: -200,
-      opacity: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: "#direction",
-        start: "top -10%",
-      },
-    });
-  });
+  useGSAP(
+    () => {
+           gsap.from('.imggi', { 
+           scaleX:0,
+           duration:1,
+           transformOrigin:"left",
+           scrollTrigger:{
+            trigger:".move",
+            start:"top bottom",
+            enf:"bottom top"
+           }
+         });
+     },
+);
 
   return (
     <>
@@ -34,13 +33,9 @@ const Three = () => {
         </h1>
       </div>
       <div className="px-9 mt-40">
-        <div
-          className='h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/66b5e1f85c354043a988ff05_cue1.gif")] bg-cover bg-center'
-          ref={rafi}
-        ></div>
+        <div className=' h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/66b5e1f85c354043a988ff05_cue1.gif")] bg-cover bg-center'></div>
         <div className="leading-none flex justify-between items-center relative">
           <h1 className="text-[7vw] tracking-tighter font-extralight mt-9 ">
-            {" "}
             CUE Wigs
           </h1>
           <svg
@@ -121,14 +116,11 @@ const Three = () => {
           <div className="w-32 h-3 bg-[#171616] absolute right-32 hover:right-16"></div>
         </div>
       </div>
+      <div className="move w-full h-screen">
       <div className="px-9 mt-40">
-        <div
-          className='h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/6422c2ce62beb0fcc0fca8b0_aws.webp")] bg-cover bg-center'
-          ref={rafi2}
-        ></div>
+        <div className='imggi h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/6422c2ce62beb0fcc0fca8b0_aws.webp")] bg-cover bg-center'></div>
         <div className="leading-none flex justify-between items-center relative">
           <h1 className="text-[7vw] tracking-tighter font-extralight mt-9 ">
-            {" "}
             AWS
           </h1>
           <svg
@@ -209,14 +201,11 @@ const Three = () => {
           <div className="w-32 h-3 bg-[#171616] absolute right-32 hover:right-16"></div>
         </div>
       </div>
+      </div>
       <div className="px-9 mt-40">
-        <div
-          className='h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/663a27f90b1be7c85c2a5463_A%20good%20Friend%20Animation%20(Character%20Card%20Grid)%20(4).gif")] bg-cover bg-center'
-          ref={rafi3}
-        ></div>
+        <div className=' h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/663a27f90b1be7c85c2a5463_A%20good%20Friend%20Animation%20(Character%20Card%20Grid)%20(4).gif")] bg-cover bg-center'></div>
         <div className="leading-none flex justify-between items-center relative">
           <h1 className="text-[7vw] tracking-tighter font-extralight mt-9 ">
-            {" "}
             A Good Friend
           </h1>
           <svg
@@ -298,13 +287,9 @@ const Three = () => {
         </div>
       </div>
       <div className="px-9 mt-40 mb-60">
-        <div
-          className='h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/64672bb0c813541f477eb87f_Seven%20Stone%20Closing%20Sign%20(16x9).gif")] bg-cover bg-center'
-          ref={rafi4}
-        ></div>
+        <div className=' h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/64672bb0c813541f477eb87f_Seven%20Stone%20Closing%20Sign%20(16x9).gif")] bg-cover bg-center'></div>
         <div className="leading-none flex justify-between items-center relative">
           <h1 className="text-[7vw] tracking-tighter font-extralight mt-9 ">
-            {" "}
             Sevenstone
           </h1>
           <svg

@@ -24,8 +24,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="page min-h-screen w-full relative bg-[#F8F1DE] text-[#171616]">
-        <nav className="flex justify-between p-7 py-11">
+      <div className="min-h-screen w-full relative bg-[#F8F1DE] text-[#171616]">
+        <nav className="flex justify-between p-0 sm:p-2 lg:p-7 xl:p-12  py-11">
           <div className="right">
             <img
               src="https://cdn.prod.website-files.com/640b08832e1854b37663877e/640b0a5e3c13566e0bb0017b_logo.svg"
@@ -36,7 +36,7 @@ const Header = () => {
             <button className="text-white bg-black px-3 py-3 rounded-full mr-4 hover:bg-white hover:text-black hover:border-2 border-black">
               <HiBars3 size={22} />
             </button>
-            <button className="px-9 py-3 rounded-full bg-[#FE784B] text-white uppercase font-sans text-xl font-bold  hover:bg-white hover:text-[#FE784B] hover:border-2 border-[#FE784B]">
+            <button className="px-7 sm:px-6 lg:px-7 xl:px-9 py-3 sm:py-3 lg:py-3 xl:py-3 rounded-full bg-[#FE784B] text-white uppercase font-sans  font-bold  hover:bg-white hover:text-[#FE784B] hover:border-2 border-[#FE784B] sm:text-sm lg:text-lg xl:text-xl">
               let's talk
             </button>
           </div>

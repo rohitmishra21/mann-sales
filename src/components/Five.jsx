@@ -2,12 +2,11 @@ import React, { useRef, useEffect } from "react";
 import "./style.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import arrow from '../assets/arrow.png'
 const Five = () => {
   const txt = useRef(null);
   const tsst = useRef(null);
-  const big = useRef(null)
-
+  const big = useRef(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -26,7 +25,7 @@ const Five = () => {
 
     if (tsst.current) {
       gsap.to(tsst.current, {
-        x: () => -(window.innerHeight ),
+        x: () => -window.innerHeight,
         scrollTrigger: {
           trigger: "#text",
           scrub: 1,
@@ -35,17 +34,18 @@ const Five = () => {
         },
       });
     }
-
   }, []);
 
   return (
     <>
-      <div className="min-h-[100vh] w-full overflow-x-hidden" id="text ">
-       
-      <div className=" h-96  flex flex-col justify-center">
-         <div className="bg-[#FF6432] h-32 rotate-2 relative top-6 z-10 overflow-x-hidden">
-             <div className="whitespace-nowrap flex items-center justify-center" ref={txt}>
-             <div className="flex items-center gap-6">
+      <div className="min-h-[100vh] w-full overflow-x-hidden relative" id="text">
+        <div className=" h-96  flex flex-col justify-center">
+          <div className="bg-[#FF6432] h-32 rotate-2 relative top-6 z-10 overflow-x-hidden">
+            <div
+              className="whitespace-nowrap flex items-center justify-center"
+              ref={txt}
+            >
+              <div className="flex items-center gap-6">
                 <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
                   meet science
                 </h1>
@@ -76,7 +76,7 @@ const Five = () => {
                   </div>
                 </div>
               </div>
-             <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6">
                 <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
                   meet science
                 </h1>
@@ -107,11 +107,14 @@ const Five = () => {
                   </div>
                 </div>
               </div>
-             </div>
-         </div>
-         <div className=" h-32 -rotate-1 overflow-x-hidden bg-[#F8F1DE] text-black">
-         <div className="whitespace-nowrap flex items-center justify-center " ref={tsst}>
-             <div className="flex items-center gap-6">
+            </div>
+          </div>
+          <div className=" h-32 -rotate-1 overflow-x-hidden bg-[#F8F1DE] text-black">
+            <div
+              className="whitespace-nowrap flex items-center justify-center "
+              ref={tsst}
+            >
+              <div className="flex items-center gap-6">
                 <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
                   meet science
                 </h1>
@@ -142,7 +145,7 @@ const Five = () => {
                   </div>
                 </div>
               </div>
-             <div className="flex items-center gap-6">
+              <div className="flex items-center gap-6">
                 <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
                   meet science
                 </h1>
@@ -173,16 +176,22 @@ const Five = () => {
                   </div>
                 </div>
               </div>
-             </div>
-         </div>
-      </div>
-       
+            </div>
+          </div>
+        </div>
 
         <div className="relative mt-40">
           <div className="text-2xl font-sans uppercase italic absolute left-1/2 -top-24">
             <h1>our calling</h1>
             <h1>is you</h1>
             <h1>collecting</h1>
+          </div>
+          <div>
+           <img 
+           src={arrow}
+           alt=""
+           className="absolute right-[500px] -top-[90px]"
+           />
           </div>
 
           <div className="flex justify-center items-center">
@@ -193,7 +202,7 @@ const Five = () => {
           </div>
           <div className="top-1/2 absolute left-1/2 -translate-x-1/2 -translate-y-[48%]">
             <img
-               ref={big}
+              ref={big}
               src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/64492b9653ef66564ec79778_main-image.webp"
               alt="Main Image"
               className="shadow-2xl shadow-black"
