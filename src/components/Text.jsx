@@ -1,28 +1,28 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 const Text = () => {
-
-  const mo = useRef(null)
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(mo.current,{
-      rotate:()=> window.innerHeight-100,
-      scrollTrigger:{
-        trigger:"#net",
-        scrub:1,
-        start:"top bottom",
-        end:"bottom top"
-     }
-    })
-  }, [])
-  
+    gsap.to(".rote", {
+      rotate: window.innerHeight - 100,
+      scrollTrigger: {
+        trigger: "#net",
+        scrub: 1,
+        start: "top bottom",
+        end: "bottom top",
+      },
+    });
+  }, []);
+
   return (
-    <div className="min-h-[290vh] bg-[#F8F1DE] text-black px-60" id="net">
+    <div
+      className="min-h-[290vh] w-full  overflow-x-hidden bg-[#F8F1DE] text-black px-60 "
+      id="net"
+    >
       <div className="pt-52">
         <h1 className="text-5xl font-normal">our manifesto*</h1>
       </div>
@@ -50,14 +50,30 @@ const Text = () => {
           to excite and ignite people everywhere to change their lives for the
           better, or at the very least change their brand of peanut butter.
         </p>
-        <img src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/6421a802ddcaaa2dfc036efd_manifesto-line.svg" alt="" className="absolute bottom-20 right-11" />
+        <img
+          src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/6421a802ddcaaa2dfc036efd_manifesto-line.svg"
+          alt=""
+          className="absolute bottom-20 right-11"
+        />
       </div>
-      <div className="mt-36 flex justify-center " ref={mo}>
-        <img src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/6423f74e22ab3520c53fcb3e_manifesto-bottom-image.svg" alt="" />
+      <div className=" flex justify-center items-center overflow-x-hidden overflow-y-hidden">
+        <div className="rote mt-36 w-fit flex justify-center">
+          <img
+            src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/6423f74e22ab3520c53fcb3e_manifesto-bottom-image.svg"
+            alt=""
+          />
+        </div>
       </div>
+
       <div className="flex justify-center items-center relative mt-10 capitalize font-sans text-[#A8A397]">
-      <h1 className="text-center">his is Naftoli’s <br /> Mannifesto.</h1>
-      <img src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/6423f8f4bdb757848725df5a_manifesto-arrow.svg" alt="" className="absolute left-[55%]"/>
+        <h1 className="text-center">
+          his is Naftoli’s <br /> Mannifesto.
+        </h1>
+        <img
+          src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/6423f8f4bdb757848725df5a_manifesto-arrow.svg"
+          alt=""
+          className="absolute left-[55%]"
+        />
       </div>
     </div>
   );

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 const Img = () => {
-
-
   const images = [
     "https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/667d14670aba24c743ac8981_img-6.webp",
     "https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/667d14673d5a51e23ead25a2_img-9.webp",
@@ -15,7 +13,6 @@ const Img = () => {
     "https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/667d146728f2df2d222cb887_img-4.webp",
     "https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/667d14672bb1f80bfef0af33_img-10.webp",
     "https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/667d14675f177d0356773fe5_img-8.webp",
-    
   ];
 
   const numberDiv = images.length;
@@ -24,13 +21,13 @@ const Img = () => {
     left: Math.random() * window.innerWidth,
     top: Math.random() * window.innerHeight,
   }));
- 
+
   const [position, setPosition] = useState(initialPosition);
 
   const handleMouseEnter = (index) => {
     const newPosition = [...position];
 
-    const maxWidth = Math.random() * window.innerWidth-100;
+    const maxWidth = Math.random() * window.innerWidth - 100;
     const maxHeigh = Math.random() * window.innerHeight;
 
     newPosition[index] = { left: maxWidth, top: maxHeigh };
@@ -56,23 +53,15 @@ const Img = () => {
               key={index}
               onMouseEnter={() => handleMouseEnter(index)}
               style={{
-                // width: "250px",
-                // height: "250px",
-               
-                position: "absolute",
+               position: "absolute",
                 left: `${pos.left}px`,
                 top: `${pos.top}px`,
                 transition: "left 0.5s ease, top 0.5s ease",
-                zIndex:20
+                zIndex: 20,
               }}
             >
-              <img
-                src={images[index]}
-                alt=""
-                className=" object-cover"
-              />
+              <img src={images[index]} alt="" className=" object-cover" />
             </div>
-            
           ))}
         </div>
         <div>
