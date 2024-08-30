@@ -29,28 +29,28 @@ const Client = () => {
 
   return (
     <div className="min-h-[100vh] bg-[#F8F1DE] text-black overflow-x-hidden">
-      <div className="text-[11vw] font-merriweather text-center pt-52">
-        <h1 className="">our clients</h1>
-        <h1 className="text-2xl uppercase font-sans">
+      <div className="text-[11vw] font-merriweather text-center xl:pt-52 pt-9">
+        <h1 className="text-7xl xl:normal-case">our clients</h1>
+        <h1 className="xl:text-2xl text-xs pt-4 xl:pt-0 font-semibold uppercase font-sans xl:normal-case">
           some recent compannines <br />
           we ha'worked with
         </h1>
         <div className="boox">
-          <div className="boxx  text-6xl font-merriweather items-center tracking-tighter flex justify-center mt-16 leading-3">
+          <div className="boxx  text-2xl xl:text-6xl font-merriweather items-center tracking-tighter xl:flex justify-center mt-16 leading-3">
             <h1 className="font-extralight">WEDNESDAY </h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">TEAM LIFELINE </h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">KODAK</h1>
           </div>
-          <div className="lefti text-6xl font-merriweather  flex justify-center mt-16 items-center leading-3 tracking-tighter">
+          <div className="lefti text-2xl xl:text-6xl font-merriweather  xl:flex justify-center mt-16 items-center leading-3 tracking-tighter">
             <h1 className="font-extralight">FLEISHIGS </h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">SEVENSTONE</h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">FURER SCHAEFER</h1>
           </div>
-          <div className="book text-6xl font-merriweather flex justify-center mt-16 items-center leading-3 tracking-tighter">
+          <div className="book text-2xl xl:text-6xl font-merriweather xl:flex justify-center mt-16 items-center leading-3 tracking-tighter">
             <h1 className="font-extralight">AWS</h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">GOODWILL </h1>

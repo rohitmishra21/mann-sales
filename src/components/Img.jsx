@@ -37,7 +37,7 @@ const Img = () => {
 
   return (
     <>
-      <div className="min-h-[60vh] relative " id="na">
+      <div className="xl:min-h-[60vh] min-h-[100vh] relative " id="na">
         <div>
           <h1 className="font-sans mt-52 text-center text-sm font-semibold uppercase">
             opps, we did it again
@@ -60,7 +60,7 @@ const Img = () => {
                 zIndex: 20,
               }}
             >
-              <img src={images[index]} alt="" className=" object-cover" />
+              <img src={images[index]} alt="" className=" object-cover " />
             </div>
           ))}
         </div>

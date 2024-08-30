@@ -65,19 +65,19 @@ const Three = () => {
         </div>
       </div>
       <div className="move w-full h-screen">
-        <div className="px-9 mt-40">
+        <div className="px-9 xl:mt-40">
           <div className='imggi h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/6422c2ce62beb0fcc0fca8b0_aws.webp")] bg-cover bg-center'></div>
           <Arow username="AWS" />
         </div>
       </div>
       <div className="anim w-full h-screen">
-        <div className="px-9 mt-40">
+        <div className="px-9 xl:mt-40">
           <div className='im h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/663a27f90b1be7c85c2a5463_A%20good%20Friend%20Animation%20(Character%20Card%20Grid)%20(4).gif")] bg-cover bg-center'></div>
           <Arow username="A Good Friend" />
         </div>
       </div>
       <div className="rang w-full h-screen">
-        <div className="px-9 mt-40 mb-60">
+        <div className="px-9 xl:mt-40 xl:mb-60">
           <div className='run h-[75vh] w-full bg-slate-500 rounded-3xl overflow-hidden bg-[url("https://cdn.prod.website-files.com/641470ee1ebc5e28c0735bbb/64672bb0c813541f477eb87f_Seven%20Stone%20Closing%20Sign%20(16x9).gif")] bg-cover bg-center'></div>
           <Arow username="Sevenstone" />
         </div>

@@ -49,9 +49,9 @@ const Five = () => {
 
   return (
     <>
-      <div className="biggi min-h-[100vh] w-full overflow-x-hidden relative">
-        <div className=" h-96  flex flex-col justify-center">
-          <div className="bg-[#FF6432] h-32 rotate-2 relative top-6 z-10 overflow-x-hidden">
+      <div className="biggi xl:min-h-[100vh] w-full overflow-x-hidden relative">
+        <div className=" xl:h-96  flex flex-col justify-center">
+          <div className="hidden bg-[#FF6432] h-32 rotate-2 relative top-6 z-10 overflow-x-hidden xl:flex justify-center items-center">
             <div
               className="whitespace-nowrap flex items-center justify-center"
               ref={txt}
@@ -120,13 +120,13 @@ const Five = () => {
               </div>
             </div>
           </div>
-          <div className=" h-32 -rotate-1 overflow-x-hidden bg-[#F8F1DE] text-black">
+          <div className="hidden h-32 -rotate-1 overflow-x-hidden bg-[#F8F1DE] text-black xl:flex justify-center items-center">
             <div
               className="whitespace-nowrap flex items-center justify-center "
               ref={tsst}
             >
               <div className="flex items-center gap-6">
-                <h1 className="text-[5vw] tracking-tighter font-serif font-extralight whitespace-nowrap">
+                <h1 className="text-[5vw]  tracking-tighter font-serif font-extralight whitespace-nowrap">
                   meet science
                 </h1>
                 <div className="border-2 border-white rounded-xl px-2 flex">

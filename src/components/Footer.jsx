@@ -18,12 +18,12 @@ const Footer = () => {
 
   return (
     <>
-      <div className="min-h-[200vh] bg-[#FF6432] ">
-        <div className="  pt-72 px-8">
-          <div className="flex justify-around items-center py-11 border-t-2 border-b-2 border-[#c9c4b630]">
+      <div className="xl:min-h-[200vh] min-h-[180vh] bg-[#FF6432] ">
+        <div className=" xl:pt-72 px-8">
+          <div className="xl:flex justify-around items-center py-11 border-t-2 border-b-2 border-[#c9c4b630]">
             <div>
               <div
-                className={`px-7 py-7 rounded-full bg-${dark} transition-all hover:bg-transparent border-[#c9c4b626] border-2 hover:bg-black `}
+                className={`hidden xl:block px-7 py-7 rounded-full bg-${dark} transition-all hover:bg-transparent border-[#c9c4b626] border-2 hover:bg-black `}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,33 +110,33 @@ const Footer = () => {
             >
               Let’s work <br /> together
             </h1>
-            <div className="card h-[50vh] w-[55vh] border-2 border-[#c9c4b626] rounded-2xl flex flex-col justify-center items-center gap-5">
-              <h1 className="text-3xl font-sans text-center">
-                Looking to hire <br /> an agency?{" "}
+            <div className="card py-4 xl:h-[50vh] xl:w-[55vh] w-full mt-6 border-2 border-[#c9c4b626] rounded-2xl justify-around flex xl:flex xl:flex-col xl:justify-center items-center gap-5">
+              <h1 className="xl:text-3xl font-sans text-center">
+                Looking to hire <br className="hidden xl:block" /> an agency?{" "}
               </h1>
-              <button className="px-9 py-3 rounded-full bg-[#171616] text-white uppercase font-sans text-xl transition-all  hover:bg-transparent  hover:border-2 border-[#c9c4b626]">
+              <button className="xl:px-9 xl:py-3 py-1 px-5 rounded-full bg-[#171616] text-white uppercase font-sans text-sm xl:text-xl transition-all  hover:bg-transparent  hover:border-2 border-[#c9c4b626]">
                 let's talk
               </button>
             </div>
-            <div className="card h-[50vh] w-[55vh] border-2 border-[#c9c4b631] rounded-2xl flex flex-col transition-all justify-center items-center gap-5">
-              <h1 className="text-3xl font-sans text-center">
-                Work for <br />
+            <div className="card py-4 xl:h-[50vh] xl:w-[55vh] w-full mt-6 border-2 border-[#c9c4b626] rounded-2xl justify-around flex xl:flex xl:flex-col xl:justify-center items-center gap-5">
+            <h1 className="xl:text-3xl font-sans text-center">
+                Work for <br className="hidden xl:block" />
                 the Maan !
               </h1>
-              <button className="px-9 py-3 rounded-full bg-[#171616] text-white uppercase font-sans text-xl   hover:bg-transparent  hover:border-2 border-[#c9c4b626]">
-                let's talk
+              <button className="xl:px-9 xl:py-3 py-1 px-5 rounded-full bg-[#171616] text-white uppercase font-sans text-sm xl:text-xl transition-all  hover:bg-transparent  hover:border-2 border-[#c9c4b626]">
+                join us
               </button>
             </div>
           </div>
         </div>
 
-        <div className="w-full h-48  flex justify-between items-center px-8 font-sans">
-          <div className="text-3xl">
+        <div className="w-full xl:h-48  xl:flex justify-between items-center px-8 font-sans">
+          <div className="xl:text-3xl py-5 xl:p-0">
             <h1>4631 US-9 Howell</h1>
             <h1>NJ 07731</h1>
             <h1>732.399.9400</h1>
           </div>
-          <div className="flex gap-5">
+          <div className="xl:flex gap-5">
             <div className="p-4 rounded-full border-2 border-[#c9c4b631] hover:bg-black transition-all hover:border-none">
               <FaPinterest size={20} className="" />
             </div>
@@ -156,12 +156,12 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full h-80  ">
+        <div className="w-full xl:h-80 py-12 xl:py-0 ">
           <h1 className="text-[17vw] tracking-tighter font-light text-center">
             Maan Sales Co.
           </h1>
         </div>
-        <div className="uppercase font-bold font-sans flex justify-between mx-8 items-center h-24 border-t-2 border-[#c9c4b631] ">
+        <div className="py-10 xl:py-0 uppercase xl:font-bold font-sans xl:flex justify-between mx-8 items-center h-24 border-t-2 border-[#c9c4b631] ">
           <h1>© 2024 MSC.</h1>
           <h1>NJ / FL</h1>
           <h1>Website made with the help of our friends at Widelab</h1>

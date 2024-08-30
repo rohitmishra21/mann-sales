@@ -25,3 +25,10 @@ body{
 .font-merriweather{
     font-family: "Merriweather", serif;
 }
+
+@media  (max-width: 640px) {
+    body{
+        overflow-x: hidden;
+     
+    }
+}

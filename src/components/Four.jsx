@@ -19,7 +19,7 @@ const Four = () => {
   }, []);
 
   return (
-    <div className=" overflow-x-hidden min-h-[100vh] flex justify-center items-center border-t-2 border-white/10 px-9 mx-9">
+    <div className=" overflow-x-hidden min-h-[50vh] xl:min-h-[100vh] flex justify-center items-center border-t-2 border-white/10 px-9 mx-9">
       <div className="timinig flex justify-center items-center ">
         <svg
           xmlns="http://www.w3.org/2000/svg"

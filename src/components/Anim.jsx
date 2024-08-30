@@ -56,8 +56,7 @@ export default function Anim() {
       const index =
         Math.floor(position / Y_OFFSET_DIFFERENCE) % dataSources.length;
       const selectedSource = dataSources[index];
-
-      if (selectedSource === dataSource) {
+    if (selectedSource === dataSource) {
         return;
       }
       setDataSource(selectedSource);
@@ -84,7 +83,7 @@ export default function Anim() {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-        }} // Apply scaling
+        }} 
       >
         <img src={dataSource} className="w-full h-full object-cover" alt="" />
       </div>

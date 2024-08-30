@@ -24,37 +24,49 @@ const Header = () => {
 
   return (
     <>
-      <div className="min-h-screen w-full relative bg-[#F8F1DE] text-[#171616]">
-        <nav className="flex justify-between p-0 sm:p-2 lg:p-7 xl:p-12  py-11">
+      <div className="xl:min-h-screen xl:w-full w-full relative bg-[#F8F1DE] text-[#171616]">
+        <nav className="xl:flex xl:justify-between  xl:p-12  xl:py-11 flex justify-between px-6 py-4 ">
           <div className="right">
             <img
               src="https://cdn.prod.website-files.com/640b08832e1854b37663877e/640b0a5e3c13566e0bb0017b_logo.svg"
               alt=""
+              className="sm:hidden xl:block hidden"
             />
+            <img 
+            src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/641750125070924218aad35d_msc-dark.svg" 
+            alt=""
+            className="xl:hidden"
+            />
+            
           </div>
-          <div className="left">
-            <button className="text-white bg-black px-3 py-3 rounded-full mr-4 hover:bg-white hover:text-black hover:border-2 border-black">
+          <div className="left xl:h-14 flex">
+            <h1 className="xl:text-white xl:bg-black xl:px-4  xl:py-4 xl:rounded-full xl:mr-4 xl:hover:bg-white xl:hover:xl:text-black xl:hover:border-2 xl:border-black text-white bg-black rounded-full py-2 px-2">
               <HiBars3 size={22} />
-            </button>
-            <button className="px-7 sm:px-6 lg:px-7 xl:px-9 py-3 sm:py-3 lg:py-3 xl:py-3 rounded-full bg-[#FE784B] text-white uppercase font-sans  font-bold  hover:bg-white hover:text-[#FE784B] hover:border-2 border-[#FE784B] sm:text-sm lg:text-lg xl:text-xl">
+            </h1>
+            <h1 className="hidden xl:block xl:px-12 xl:py-4 xl:rounded-full  xl:bg-[#FE784B] xl:text-white xl:uppercase xl:font-sans  xl:font-bold  xl:hover:bg-white xl:hover:xl:text-[#FE784B] xl:hover:border-2 xl:border-[#FE784B] ">
               let's talk
-            </button>
+            </h1>
           </div>
         </nav>
         <header className=" w-full relative">
-          <div className="flex flex-col justify-between items-center">
-            <div className=" flex justify-center gap-9 h-80">
-              <h1 className="loader h text-[14vw] leading-2 text-center tracking-tighter font-light">
+          <div className="xl:flex xl:flex-col xl:justify-between xl:items-center">
+            <div className=" xl:flex xl:justify-center xl:gap-9 xl:h-80 flex flex-col px-6 xl:flex-row mt-10">
+              <h1 className="loader hidden xl:block  h xl:text-[14vw] text-[14vw] xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
                 We
               </h1>
-              <h1 className=" h text-[14vw] leading-2 text-center tracking-tighter font-light">
+              <h1 className=" h hidden xl:block xl:text-[14vw] text-[14vw]  xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
                 make
               </h1>
-              <h1 className=" h text-[14vw] leading-2 text-center tracking-tighter font-light">
-                <div className="">
-                  <div className=" flex items-center ">
-                    <h1 className="mr-24">b</h1>
-                    <div className="absolute right-[270px]">
+              <h1 className="xl:hidden text-[14vw]">We make</h1>
+              <h1 className="xl:hidden text-[14vw]">boring things</h1>
+              <h1 className="xl:hidden text-[14vw]">interesting</h1>
+
+              <h1 className=" h text-[14vw] xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
+                <div className="xl:block hidden">
+                  <div className="xl:flex xl:items-center ">
+          
+                    <h1 className="xl:mr-24">b</h1>
+                    <div className="xl:absolute xl:right-[270px] xl:block hidden ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -132,21 +144,21 @@ const Header = () => {
                         </g>
                       </svg>
                     </div>
-                   <h1 className="z-10">ring</h1>
+                    <h1 className="xl:z-10">ring</h1>
                   </div>
                 </div>
               </h1>
             </div>
-            <div className="loader flex justify-center gap-9">
-              <h1 className="h text-[14vw] leading-3 text-center tracking-tighter font-light">
+            <div className="loader xl:flex  xl:justify-center  xl:gap-9 hidden">
+              <h1 className="h xl:text-[14vw] xl:leading-3 xl:text-center xl:tracking-tighter xl:font-light">
                 thing
               </h1>
-              <h1 className="h text-[14vw] leading-3 text-center tracking-tighter font-light">
+              <h1 className="h xl:text-[14vw] xl:leading-3 xl:text-center xl:tracking-tighter xl:font-light">
                 interesting
               </h1>
             </div>
 
-            <h1 className="text-center text-xl font-semibold mt-32 font-sans">
+            <h1 className=" xl:block hidden xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans">
               WELCOME TO THE BRANDING & PERSUASION COMPANY
             </h1>
           </div>

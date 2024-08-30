@@ -3,7 +3,7 @@ import { LuDot } from "react-icons/lu";
 const Col = () => {
   return (
     <>
-      <div className="min-h-[100vh] bg-[#F8F1DE] text-black px-16 pt-10">
+      <div className="min-h-[100vh] bg-[#F8F1DE] text-black px-16 pt-10 hidden xl:block">
         <div className="big-box w-full h-[100vh]  grid grid-cols-8">
           <div className=" border-r-2 border-l-2  border-[#ECE6D4] h-screen bg-[#F8F1DE] hover:translate-y-10 transition-all">
             <div className="text-center py-8 border-b-2 border-[#ECE6D4]">

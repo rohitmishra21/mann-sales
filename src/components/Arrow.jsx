@@ -3,8 +3,8 @@ import React from "react";
 const Arrow = () => {
   return (
     <>
- <div className="main">
-     <div className="group border-2 border-[#FF6432]  h-[90px] w-[130px] rounded-full flex justify-center items-center overflow-hidden hover:bg-[#FF6432] ">
+ <div className="main pl-6">
+     <div className="group border-2 border-[#FF6432] h-[60px] w-[80px] xl:h-[90px] xl:w-[130px] rounded-full flex justify-center items-center overflow-hidden hover:bg-[#FF6432] ">
           <div className=" border-[#FF6432] animate-move hidden group-hover:block">
             <svg
               className="h-10 w-10 rounded-2xl text-[#fff] "
