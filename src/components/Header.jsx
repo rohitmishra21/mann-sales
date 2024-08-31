@@ -32,18 +32,17 @@ const Header = () => {
               alt=""
               className="sm:hidden xl:block hidden"
             />
-            <img 
-            src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/641750125070924218aad35d_msc-dark.svg" 
-            alt=""
-            className="xl:hidden"
+            <img
+              src="https://cdn.prod.website-files.com/640a960b97b40fb62f5ad213/641750125070924218aad35d_msc-dark.svg"
+              alt=""
+              className="xl:hidden"
             />
-            
           </div>
-          <div className="left xl:h-14 flex">
+          <div className="left xl:h-14  justify-center items-center flex gap-3">
             <h1 className="xl:text-white xl:bg-black xl:px-4  xl:py-4 xl:rounded-full xl:mr-4 xl:hover:bg-white xl:hover:xl:text-black xl:hover:border-2 xl:border-black text-white bg-black rounded-full py-2 px-2">
               <HiBars3 size={22} />
             </h1>
-            <h1 className="hidden xl:block xl:px-12 xl:py-4 xl:rounded-full  xl:bg-[#FE784B] xl:text-white xl:uppercase xl:font-sans  xl:font-bold  xl:hover:bg-white xl:hover:xl:text-[#FE784B] xl:hover:border-2 xl:border-[#FE784B] ">
+            <h1 className="hidden md:block lg:block xl:block px-12 py-4 rounded-full  bg-[#FE784B] text-white uppercase font-sans  font-bold  hover:bg-white hover:text-[#FE784B] hover:border-2 xborder-[#FE784B] ">
               let's talk
             </h1>
           </div>
@@ -57,14 +56,21 @@ const Header = () => {
               <h1 className=" h hidden xl:block xl:text-[14vw] text-[14vw]  xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
                 make
               </h1>
-              <h1 className="xl:hidden text-[14vw]">We make</h1>
-              <h1 className="xl:hidden text-[14vw]">boring things</h1>
-              <h1 className="xl:hidden text-[14vw] pb-9 xl:pb-0">interesting</h1>
+              <div className="xl:hidden md:hidden lg:hidden  text-[14vw] leading-none">
+              <h1 className="">We make </h1>
+              <h1 className="">boring things</h1>
+              <h1 className="">interesting</h1>
+              </div>
+              <div className="xl:hidden hidden md:flex flex-col justify-center items-center text-[8vw] leading-tighter">
+              <h1 className="">We make boring </h1>
+              <h1 className="">interesting things</h1>
+             
+              </div>
+          
 
               <h1 className=" h text-[14vw] xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
                 <div className="xl:block hidden">
                   <div className="xl:flex xl:items-center ">
-          
                     <h1 className="xl:mr-24">b</h1>
                     <div className="xl:absolute xl:right-[270px] xl:block hidden ">
                       <svg
@@ -158,7 +164,7 @@ const Header = () => {
               </h1>
             </div>
 
-            <h1 className=" xl:block hidden xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans ">
+            <h1 className=" xl:block hidden xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans">
               WELCOME TO THE BRANDING & PERSUASION COMPANY
             </h1>
           </div>

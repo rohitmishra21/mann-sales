@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="xl:min-h-[200vh] min-h-[150vh] bg-[#FF6432] ">
+      <div className="xl:min-h-[200vh] min-h-[150vh] bg-[#FF6432] md:min-h-[170vh]">
         <div className=" xl:pt-72 px-8">
           <div className="xl:flex justify-around items-center py-11 border-t-2 border-b-2 border-[#c9c4b630]">
             <div>

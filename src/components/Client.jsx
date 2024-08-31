@@ -36,21 +36,21 @@ const Client = () => {
           we ha'worked with
         </h1>
         <div className="boox">
-          <div className="boxx  text-2xl xl:text-6xl font-merriweather items-center tracking-tighter xl:flex justify-center mt-16 leading-3">
+          <div className="boxx  text-2xl xl:text-6xl font-merriweather items-center tracking-tighter xl:flex justify-center mt-16 leading-3 md:flex">
             <h1 className="font-extralight">WEDNESDAY </h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">TEAM LIFELINE </h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">KODAK</h1>
           </div>
-          <div className="lefti text-2xl xl:text-6xl font-merriweather  xl:flex justify-center mt-16 items-center leading-3 tracking-tighter">
+          <div className="lefti text-2xl xl:text-6xl font-merriweather  xl:flex justify-center mt-16 items-center leading-3 tracking-tighter  md:flex">
             <h1 className="font-extralight">FLEISHIGS </h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">SEVENSTONE</h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">FURER SCHAEFER</h1>
           </div>
-          <div className="book text-2xl xl:text-6xl font-merriweather xl:flex justify-center mt-16 items-center leading-3 tracking-tighter">
+          <div className="book text-2xl xl:text-6xl font-merriweather xl:flex justify-center mt-16 items-center leading-3 tracking-tighter  md:flex" >
             <h1 className="font-extralight">AWS</h1>
             <LuDot className="text-[#FF6432]" />
             <h1 className="font-light">GOODWILL </h1>
@@ -59,7 +59,7 @@ const Client = () => {
           </div>
         </div>
       </div>
-      <div className="text-[11vw] mt-32 text-center">
+      <div className="text-[11vw] mt-32 md:mt-7 text-center">
         <h1>future clients</h1>
         <h1 className="text-2xl uppercase font-sans">
           companines we are going to <br />

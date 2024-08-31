@@ -20,13 +20,13 @@ const Text = () => {
 
   return (
     <div
-      className="xl:min-h-[290vh] min-h-[230vh] w-full  xl:overflow-x-hidden bg-[#F8F1DE] text-black xl:px-60 px-4"
+      className="xl:min-h-[290vh] min-h-[230vh]  md:min-h-[280vh]   w-full  xl:overflow-x-hidden bg-[#F8F1DE] text-black xl:px-60 px-4"
       id="net"
     >
       <div className="xl:pt-52 pt-20">
-        <h1 className="xl:text-5xl text-1xl text-start uppercase ">our manifesto*</h1>
+        <h1 className="xl:text-5xl text-1xl text-start uppercase md:px-8 md:text-[3vw] ">our manifesto*</h1>
       </div>
-      <div className="xl:text-8xl text-4xl mt-4 xl:mt-0 leading-tighter relative ">
+      <div className="xl:text-8xl text-4xl mt-4 xl:mt-0 leading-tighter relative  md:text-[7vw] md:leading-tight md:p-0 md:px-8 md:border-none">
         <h1>The truth</h1>
         <h1>is only the truth</h1>
         <h1>if it’s intertresting.</h1>
@@ -36,21 +36,21 @@ const Text = () => {
           className="absolute -bottom-5 right-32 hidden xl:block"
         />
       </div>
-      <div className="xl:text-5xl xl:text-black text-[#FF6432] text-4xl xl:mt-36 mt-11 border-t-2 border-gray-300 py-12 xl:py-0 pr-20 leading-tight">
+      <div className="xl:text-5xl md:text-[5vw] md:p-7 md:px-8 md:border-none xl:text-black md:text-black md:leading-none text-[#FF6432] text-4xl xl:mt-36 mt-11 border-t-2 border-gray-300 py-12 xl:py-0 pr-20 leading-tight">
         <p>
           If no one’s paying attention, who cares if what you’re saying is true?
           Or what you’re saying at all?
-           <span className="xl:block hidden">
+           <span className="xl:block hidden md:block">
           We do, but that’s because you’re paying
           us. And in exchange for you paying us we’ll do our hardest to make
           sure everyone else cares about what you’re saying too.
             </span>
         </p>
       </div>
-      <div className="xl:hidden pr-24">
+      <div className="xl:hidden pr-24 md:text-[5vw] md:p-7 md:px-8 md:border-none md:leading-none">
         <p> We do, but that’s because you’re paying us. And in exchange for you paying us we'll do our hardest to make sure everyone else cares about what you're saying too.</p>
       </div>
-      <div className="xl:text-5xl xl:mt-36 leading-tight relative mt-8 pr-24">
+      <div className="xl:text-5xl xl:mt-36 leading-tight relative mt-8 md:mt-0 pr-24 md:text-[5vw] md:p-5 md:px-8 md:border-none md:leading-none">
         <p>
           As the persuasion company we inject creativity into everything you do
           to excite and ignite people everywhere to change their lives for the

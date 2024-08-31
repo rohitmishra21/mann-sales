@@ -6,9 +6,9 @@ import Arrow from "./Arrow";
 const Black = () => {
 
   return (
-    <div className="min-h-[140vh] bg-black">
-      <div className="w-full xl:flex ">
-        <div className="font-inter xl:w-[50%] xl:px-32 xl:text-5xl xl:mt-40 pt-20 px-5 pr-24 xl:pr-0 text-3xl">
+    <div className="min-h-[140vh] md:min-h-[100vh] bg-black">
+      <div className="w-full xl:flex md:flex  ">
+        <div className="font-inter xl:w-[50%] md:w-1/2 xl:px-32 xl:text-5xl xl:mt-40 pt-20 px-5 pr-24 xl:pr-0 text-3xl">
           <h1 className="text-[#FF6432] ">
             “Creativity is the last unfair advantage we’re legally allowed to
             take over our competitors{" "}
@@ -20,7 +20,7 @@ const Black = () => {
             it. But if you like lists, here's a list.
           </p>
         </div>
-        <div className="xl:w-1/2 h-screen xl:mt-40 flex flex-col gap-5 mt-16">
+        <div className="xl:w-1/2  md:w-1/2  h-screen xl:mt-40 flex flex-col gap-5 mt-16">
            <div className="flex gap-7">
            <Arrow/>
            <h1 className="font-merriweather text-4xl xl:text-6xl leading-normal font-light ">
