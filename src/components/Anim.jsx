@@ -56,7 +56,8 @@ export default function Anim() {
       const index =
         Math.floor(position / Y_OFFSET_DIFFERENCE) % dataSources.length;
       const selectedSource = dataSources[index];
-    if (selectedSource === dataSource) {
+
+      if (selectedSource === dataSource) {
         return;
       }
       setDataSource(selectedSource);
@@ -70,8 +71,9 @@ export default function Anim() {
   }, [dataSource]);
 
   return (
-    <div
-      className="flex justify-center items-center relative min-h-[200vh] "
+ <>
+     <div
+      className="hidden xl:flex justify-center items-center relative min-h-[200vh] "
       id="page"
     >
       <div
@@ -83,10 +85,33 @@ export default function Anim() {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-        }} 
+        }} // Apply scaling
       >
         <img src={dataSource} className="w-full h-full object-cover" alt="" />
       </div>
     </div>
+
+    <div className="w-full bg-[#F8F1DE] flex justify-center h-[80vh] items-center flex-col xl:hidden ">
+    <div
+        ref={divRef1}
+        className="h-[65vh] w-[50vh] bg-black rounded-[40vh] flex  justify-center items-center overflow-hidden  top-32"
+        id="box"
+        style={{
+         
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }} // Apply scaling
+      >
+        <img src={dataSource} className="w-full h-full object-cover" alt="" />
+      </div>
+      <div className="text-black uppercase text-center py-10 font-semibold xl:hidden">
+        <h1>welcome to the</h1>
+        <h1>banding $ presulation COMPANY</h1>
+      </div>
+    </div>
+  
+ </>
+    
   );
 }

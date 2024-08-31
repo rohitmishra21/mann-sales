@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="xl:min-h-[200vh] min-h-[180vh] bg-[#FF6432] ">
+      <div className="xl:min-h-[200vh] min-h-[150vh] bg-[#FF6432] ">
         <div className=" xl:pt-72 px-8">
           <div className="xl:flex justify-around items-center py-11 border-t-2 border-b-2 border-[#c9c4b630]">
             <div>
@@ -136,7 +136,7 @@ const Footer = () => {
             <h1>NJ 07731</h1>
             <h1>732.399.9400</h1>
           </div>
-          <div className="xl:flex gap-5">
+          <div className="xl:flex flex gap-5">
             <div className="p-4 rounded-full border-2 border-[#c9c4b631] hover:bg-black transition-all hover:border-none">
               <FaPinterest size={20} className="" />
             </div>

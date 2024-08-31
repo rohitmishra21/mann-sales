@@ -59,7 +59,7 @@ const Header = () => {
               </h1>
               <h1 className="xl:hidden text-[14vw]">We make</h1>
               <h1 className="xl:hidden text-[14vw]">boring things</h1>
-              <h1 className="xl:hidden text-[14vw]">interesting</h1>
+              <h1 className="xl:hidden text-[14vw] pb-9 xl:pb-0">interesting</h1>
 
               <h1 className=" h text-[14vw] xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
                 <div className="xl:block hidden">
@@ -158,7 +158,7 @@ const Header = () => {
               </h1>
             </div>
 
-            <h1 className=" xl:block hidden xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans">
+            <h1 className=" xl:block hidden xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans ">
               WELCOME TO THE BRANDING & PERSUASION COMPANY
             </h1>
           </div>

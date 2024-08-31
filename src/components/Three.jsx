@@ -51,7 +51,7 @@ const Three = () => {
   return (
     <>
       <div className="leading-none text-center" id="direction">
-        <h1 className="text-[12vw] tracking-tighter font-extralight ">
+        <h1 className="text-[12vw] tracking-tighter font-extralight pt-10 ">
           Select pieces of
         </h1>
         <h1 className="text-[12vw]  tracking-tighter font-extralight ">
