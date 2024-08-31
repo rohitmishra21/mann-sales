@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="xl:min-h-screen xl:w-full w-full relative bg-[#F8F1DE] text-[#171616]">
+      <div className="xl:min-h-screen lg:min-h-[70vh] xl:w-full w-full relative bg-[#F8F1DE] text-[#171616]">
         <nav className="xl:flex xl:justify-between  xl:p-12  xl:py-11 flex justify-between px-6 py-4 ">
           <div className="right">
             <img
@@ -48,12 +48,12 @@ const Header = () => {
           </div>
         </nav>
         <header className=" w-full relative">
-          <div className="xl:flex xl:flex-col xl:justify-between xl:items-center">
-            <div className=" xl:flex xl:justify-center xl:gap-9 xl:h-80 flex flex-col px-6 xl:flex-row mt-10">
-              <h1 className="loader hidden xl:block  h xl:text-[14vw] text-[14vw] xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
+          <div className="xl:flex xl:flex-col xl:justify-between xl:items-center lg:flex lg:justify-between lg:items-center lg:flex-col">
+            <div className=" xl:flex xl:justify-center xl:gap-9 xl:h-80 lg:gap-9 flex flex-col px-6 xl:flex-row mt-10 lg:flex-row">
+              <h1 className="loader hidden xl:block lg:block h xl:text-[14vw]  lg:text-[10vw] lg:text-center text-[14vw] xl:leading-2 xl:text-center lg:tracking-tighter xl:tracking-tighter xl:font-light">
                 We
               </h1>
-              <h1 className=" h hidden xl:block xl:text-[14vw] text-[14vw]  xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
+              <h1 className=" h hidden xl:block lg:block lg:text-[10vw]  xl:text-[14vw] text-[14vw]  xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
                 make
               </h1>
               <div className="xl:hidden md:hidden lg:hidden  text-[14vw] leading-none">
@@ -61,18 +61,16 @@ const Header = () => {
               <h1 className="">boring things</h1>
               <h1 className="">interesting</h1>
               </div>
-              <div className="xl:hidden hidden md:flex flex-col justify-center items-center text-[8vw] leading-tighter">
+              <div className="xl:hidden hidden lg:hidden md:flex flex-col justify-center items-center text-[8vw] leading-tighter">
               <h1 className="">We make boring </h1>
               <h1 className="">interesting things</h1>
              
               </div>
-          
-
-              <h1 className=" h text-[14vw] xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
-                <div className="xl:block hidden">
-                  <div className="xl:flex xl:items-center ">
-                    <h1 className="xl:mr-24">b</h1>
-                    <div className="xl:absolute xl:right-[270px] xl:block hidden ">
+              <h1 className=" h xl:text-[14vw] lg:text-[10vw]  xl:text-center xl:tracking-tighter xl:font-light">
+                <div className="xl:block lg:block  hidden">
+                  <div className="xl:flex lg:flex lg:items-center  xl:items-center ">
+                    <h1 className="xl:mr-24 lg:mr-24">b</h1>
+                    <div className="xl:absolute xl:right-[270px] xl:block hidden lg:block lg:absolute lg:right-[175px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -150,16 +148,16 @@ const Header = () => {
                         </g>
                       </svg>
                     </div>
-                    <h1 className="xl:z-10">ring</h1>
+                    <h1 className="xl:z-10 lg:z-10">ring</h1>
                   </div>
                 </div>
               </h1>
             </div>
-            <div className="loader xl:flex  xl:justify-center  xl:gap-9 hidden">
-              <h1 className="h xl:text-[14vw] xl:leading-3 xl:text-center xl:tracking-tighter xl:font-light">
+            <div className="loader xl:flex lg:flex lg:justify-center  xl:justify-center lg:gap-9   xl:gap-9 hidden">
+              <h1 className="h xl:text-[14vw] lg:text-[10vw]  leading-3 text-center tracking-tighter font-light">
                 thing
               </h1>
-              <h1 className="h xl:text-[14vw] xl:leading-3 xl:text-center xl:tracking-tighter xl:font-light">
+              <h1 className="h xl:text-[14vw] lg:text-[10vw]  leading-3 text-center tracking-tighter font-light">
                 interesting
               </h1>
             </div>
