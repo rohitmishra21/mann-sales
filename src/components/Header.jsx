@@ -11,12 +11,13 @@ const Header = () => {
       y: 100,
       opacity: 0,
       stagger: 0.1,
-      duration: 0.5,
+      duration: 1,
       ease: "power1.out",
-    }).to(".loader h1", {
+    }),
+    tl.to(".loader h1", {
       y: 0,
       opacity: 1,
-      duration: 0.5,
+      duration: 1,
       ease: "power1.out",
       stagger: 0.2,
     });
@@ -24,9 +25,9 @@ const Header = () => {
 
   return (
     <>
-      <div className="xl:min-h-screen lg:min-h-[70vh] xl:w-full w-full relative bg-[#F8F1DE] text-[#171616]">
-        <nav className="xl:flex xl:justify-between  xl:p-12  xl:py-11 flex justify-between px-6 py-4 ">
-          <div className="right">
+      <div className="xl:min-h-screen xl:w-full w-full relative bg-[#F8F1DE] text-[#171616]  lg:min-h-[70vh]">
+        <nav className="xl:flex  xl:justify-between xl:p-12  xl:py-11 flex justify-between px-6 py-4 ">
+          <div className="">
             <img
               src="https://cdn.prod.website-files.com/640b08832e1854b37663877e/640b0a5e3c13566e0bb0017b_logo.svg"
               alt=""
@@ -38,19 +39,19 @@ const Header = () => {
               className="xl:hidden"
             />
           </div>
-          <div className="left xl:h-14  justify-center items-center flex gap-3">
+          <div className=" xl:h-14   justify-center items-center flex gap-3">
             <h1 className="xl:text-white xl:bg-black xl:px-4  xl:py-4 xl:rounded-full xl:mr-4 xl:hover:bg-white xl:hover:xl:text-black xl:hover:border-2 xl:border-black text-white bg-black rounded-full py-2 px-2">
               <HiBars3 size={22} />
             </h1>
-            <h1 className="hidden md:block lg:block xl:block px-12 py-4 rounded-full  bg-[#FE784B] text-white uppercase font-sans  font-bold  hover:bg-white hover:text-[#FE784B] hover:border-2 xborder-[#FE784B] ">
+            <h1 className="hidden md:block lg:block xl:block px-12 py-4 rounded-full  bg-[#FE784B] text-white uppercase font-sans  font-bold  hover:bg-white hover:text-[#FE784B] hover:border-2 border-[#FE784B] ">
               let's talk
             </h1>
           </div>
         </nav>
         <header className=" w-full relative">
           <div className="xl:flex xl:flex-col xl:justify-between xl:items-center lg:flex lg:justify-between lg:items-center lg:flex-col">
-            <div className=" xl:flex xl:justify-center xl:gap-9 xl:h-80 lg:gap-9 flex flex-col px-6 xl:flex-row mt-10 lg:flex-row">
-              <h1 className="loader hidden xl:block lg:block h xl:text-[14vw]  lg:text-[10vw] lg:text-center text-[14vw] xl:leading-2 xl:text-center lg:tracking-tighter xl:tracking-tighter xl:font-light">
+            <div className="loader xl:flex xl:justify-center xl:gap-9 xl:h-80 lg:gap-9 flex flex-col px-6 xl:flex-row mt-10 lg:flex-row">
+              <h1 className=" hidden xl:block lg:block h xl:text-[14vw]  lg:text-[10vw] lg:text-center text-[14vw] xl:leading-2 xl:text-center lg:tracking-tighter xl:tracking-tighter xl:font-light">
                 We
               </h1>
               <h1 className=" h hidden xl:block lg:block lg:text-[10vw]  xl:text-[14vw] text-[14vw]  xl:leading-2 xl:text-center xl:tracking-tighter xl:font-light">
@@ -70,7 +71,7 @@ const Header = () => {
                 <div className="xl:block lg:block  hidden">
                   <div className="xl:flex lg:flex lg:items-center  xl:items-center ">
                     <h1 className="xl:mr-24 lg:mr-24">b</h1>
-                    <div className="xl:absolute xl:right-[270px] xl:block hidden lg:block lg:absolute lg:right-[175px]">
+                    <div className="xl:absolute xl:right-[150px] xl:block hidden lg:block lg:absolute lg:right-[175px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -162,7 +163,7 @@ const Header = () => {
               </h1>
             </div>
 
-            <h1 className=" xl:block hidden xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans">
+            <h1 className=" xl:block hidden xl:py-14 xl:text-center xl:text-xl xl:font-semibold mt-32 xl:font-sans">
               WELCOME TO THE BRANDING & PERSUASION COMPANY
             </h1>
           </div>

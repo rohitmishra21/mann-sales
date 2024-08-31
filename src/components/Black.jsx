@@ -27,7 +27,7 @@ const Black = () => {
   });
 
   return (
-    <div className="min-h-[140vh] md:min-h-[100vh] xl:min-h-[150vh] bg-black">
+    <div className="min-h-[140vh] md:min-h-[100vh] xl:min-h-[150vh] bg-black overflow-x-hidden">
       <div className="side w-full  xl:flex md:flex  ">
         <div className="right  font-inter xl:w-[50%] md:w-1/2 xl:px-32 xl:text-5xl xl:pt-36  pt-20 px-5 pr-24 xl:pr-0 text-3xl">
           <h1 className="text-[#FF6432] ">

@@ -91,10 +91,10 @@ export default function Anim() {
       </div>
     </div>
 
-    <div className="w-full bg-[#F8F1DE] flex justify-center h-[80vh] sm:min-h-[150vh] lg:min-h-[250vh]: md:min items-center flex-col xl:hidden md:pt-10 ">
+    <div className="w-full  bg-[#F8F1DE] flex justify-center h-[80vh] sm:min-h-[150vh] lg:min-h-[250vh]: md:min items-center flex-col xl:hidden md:pt-10 ">
       <div
         ref={divRef1}
-        className="h-[65vh] w-[50vh] sm:h-[110vh] sm:w-[85vh] md:h-[130vh] md:w-[80vh] lg:w-[95vh] lg:min-h-[140vh]   bg-black rounded-[40vh] flex  justify-center items-center overflow-hidden "
+        className="h-[65vh] w-[50vh] sm:h-[110vh] sm:w-[85vh] md:h-[130vh] md:w-[80vh] lg:w-[95vh] lg:min-h-[140vh] xl:hidden  bg-black rounded-[40vh] flex  justify-center items-center overflow-hidden "
         id="box"
         style={{
          
